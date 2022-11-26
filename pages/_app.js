@@ -1,6 +1,6 @@
 import "../styles/globals.css";
 import { ChakraProvider } from "@chakra-ui/react";
-import { Header } from "../components";
+import { Footer, Header } from "../components";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -9,6 +9,7 @@ function MyApp({ Component, pageProps }) {
       <main style={{ minHeight: "calc(100vh - 6rem)" }}>
         <Component {...pageProps} />;
       </main>
+      <Footer />
     </ChakraProvider>
   );
 }
